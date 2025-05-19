@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #618799;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.trash-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.trash-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+}
+
+.trash-icon:hover {
+    transform: scale(1.2);
+}
+
+.top-nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    position: relative;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top-nav .left {
+    left: 30px;
+}
+
+.top-nav .center {
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-nav .right {
+    right: 30px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    bottom: 0; 
+}
+
+.bottom-nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+}
